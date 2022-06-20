@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Agenda</title>
+    <link href="Css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="Botones">
+        <button onclick="AddContacto();">(+) Add. Contacto</button>
+        <button onclick="CargarDatos();">Listar Contactos</button>
+    </div>
+    <form>
+        <div id="formAdd" style="display: none;">
+            <h2>Registro de Contancto</h2>
+            <input type="text" placeholder="Nombre" id="txtNombre">
+            <input type="text" placeholder="Apellido" id="txtApellido">
+            <input type="text" placeholder="Telefono" id="txtTelefono">
+            <button type="button" class="btn btn-default" id="btnGuardar">Guardar Contacto</button>
+            <button type="button" class="btn btn-default" id="btnCancelar" onclick=" Inicio();">Cancelar</button>
+        </div>
+        <div id="divListar" style="display: none;">
+            <h2>Listado Contactos</h2>
+            <button onclick="Inicio();">Volver a Inicio</button>
+            <table class="table table-striped" style="font-size: 14px; margin-left: 0px;" id="ListContacto">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </form>
+    <script src="Js/index.js"></script>
+    <script src="Js/logica.js"></script>
+</body>
+
+</html>

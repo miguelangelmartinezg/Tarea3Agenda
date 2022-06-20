@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(101, 184, 240);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 8px;
+    font-family: monospace;
+}
+
+.Botones {
+    text-align: center;
+    margin-top: 25px;
+}
+
+form {
+    width: 730px;
+    margin: auto;
+    background: rgba(241, 229, 229, 0.4);
+    padding: 15px 40px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+}
